@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: oldlace;
+}
+
+@theme {
+    --breakpoint-minsidebar: 950px;
+}

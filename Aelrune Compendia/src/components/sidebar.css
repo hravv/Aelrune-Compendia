@@ -1,0 +1,26 @@
+.navbutton {
+    background-image: url(../assets/images/bookspine.png);
+    background-size: cover;
+}
+
+.navbutton2{
+    background-image: url(../assets/images/bookspine.png);
+    background-position: 55%;
+    background-size: cover;
+}
+
+.navbutton3 {
+    background-image: url(../assets/images/bookspine2.png);
+    background-size: cover;
+}
+
+.navbutton4 {
+    background-image: url(../assets/images/bookspine.png);
+    background-size: cover;
+    background-position: 20%;
+}
+
+.navbutton, .navbutton2, .navbutton3, .navbutton4 {
+    box-shadow: 0px 1px 6px black;
+    position: relative;
+}

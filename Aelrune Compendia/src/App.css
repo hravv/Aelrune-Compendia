@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Morris-Roman;
+    src: url(./fonts/morris-roman.black.ttf);
+}
+
+@font-face {
+    font-family: Macondo;
+    src: url(./fonts/MacondoSwashCaps-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rosarivo;
+    src: url(./fonts/Rosarivo-Regular.ttf);
+}
+
+p {
+   font-family: Rosarivo;
+   font-size: 1.1rem;
+   margin-right: 20px;
+   margin-left: 20px;
+   text-wrap: wrap;
+}
+
+.leaftile {
+    background-image: url(./assets/images/bgtile.png);
+    background-size: contain;
+    opacity: 30%;
+}
+
+@media (min-width: 640px) {
+    /* sm */
+    p {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    /* md */
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* lg */
+}
