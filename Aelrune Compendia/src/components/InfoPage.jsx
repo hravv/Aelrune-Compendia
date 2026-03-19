@@ -27,7 +27,7 @@ const InfoPage = ({allData}) => {
                              alt={`Image for ${data.NAME} coming soon!`}
                              className="w-50 h-50 md:w-70 md:h-70 border-4 border-yellow-900"
                         />
-                        <div className="subtitles flex flex-col gap-4">
+                        <div className="subtitles flex flex-col gap-4 mb-4">
                             <h3 className="text-[1.8rem] font-[Macondo]">{data.SUBTITLE}</h3>
                             <h3 className="text-[1.6rem] font-[Macondo]">{data.RACE ? `Race: ${data.RACE}` : ""}</h3>
                             <h3 className="text-[1.6rem] font-[Macondo]">{data.CLASS ? `Class: ${data.CLASS}` : ""}</h3>
