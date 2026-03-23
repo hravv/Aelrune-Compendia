@@ -5,16 +5,9 @@
 }
 
 .title {
-  text-shadow:
-    -1px -1px 0 #543f30,
-     1px -1px 0 #543f30,
-    -1px  1px 0 #543f30,
-     1px  1px 0 #543f30,
-    -2px -2px 0 #543f30,
-     2px -2px 0 #543f30,
-    -2px -2px 0 #543f30,
-     2px -2px 0 #543f30,
+  text-shadow: -1px 12px 9px #000;
+  filter: contrast(1.1) brightness(0.95);
+  filter: blur(0.4px);
 
 
-     -1px 12px 9px #000;
 }

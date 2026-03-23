@@ -16,7 +16,9 @@ function App() {
   const [allData, setAllData] = useState({
           creatures: [],
           items: [],
-          characters: []
+          characters: [],
+          npcs: [],
+          locations: []
       });
       
   const fetchAllData = async () => {
@@ -24,8 +26,10 @@ function App() {
       const creatures = await fetchSheet("0");
       const items = await fetchSheet("869977913");
       const characters = await fetchSheet("1311284340");
-  
-         setAllData({ creatures, items, characters });
+      const npcs = await fetchSheet("619045331");
+      const locations = await fetchSheet("890849947");
+
+         setAllData({ creatures, items, characters, npcs, locations });
          } catch (error) {
            console.error("Failed to fetch alldata: ", error);
          }

@@ -1,0 +1,42 @@
+.quote-bg {
+    position: relative;
+    z-index: 10;
+}
+
+.quote-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../assets/images/woodbg.jpg);
+    background-position: 5%;
+    background-size: 60%;
+    background-repeat: repeat-x;
+    z-index: -2;
+    opacity: 78%;
+}
+
+.quote-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../assets/images/hangingvinesbg.PNG), url(../assets/images/hangingvinesbg.PNG);
+    background-position: left 20px top, right 20px top;
+    background-size: 15% 100%, 15% 100%;
+    background-repeat: no-repeat, no-repeat;
+    height: 95%;
+    z-index: -1;
+    opacity: 0%;
+    filter: blur(0.5px);
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8))
+}
+
+.quote-cont p{
+     filter: drop-shadow(0 0 6px rgba(241, 195, 13, 0.8));
+
+}
+
+@media (min-width: 1024px) {
+    .quote-bg::after {
+        opacity: 85%;
+    }
+}

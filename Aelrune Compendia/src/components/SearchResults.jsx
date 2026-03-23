@@ -16,20 +16,30 @@ const SearchResults = ({ allData }) => {
 
 
   return (
-    <div>
-      <h2 className="text-[2.4rem] 2xl:text-[3rem] font-[Macondo] mb-10">Results for "{query}"</h2>
-      <ul>
-        {results.map((result, i) => {
-          return (
-            <Link to={`/${result.NAME}`}>
-              <li index={i} className='font-[Macondo] text-[1.2rem] xl:text-[1.6rem] underline'>
-                {result.NAME}
-              </li>
-            </Link>
-          )
-        })}
-      </ul>
-    </div>
+    <section className='h-[95%] w-[95%]'>
+      { results ?
+      <div className='flex flex-col items-center justify-center text-center'>
+        <div className='p-2 border-b-3 border-yellow-900 mb-12'>
+          <h2 className="text-[2.4rem] font-[Macondo]">Results for "{query}"</h2>
+        </div>
+        <ul className='grid grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-15'>
+          {results.map((result, i) => {
+            return (
+              <Link to={`/${result.NAME}`}>
+                <li index={i} className='font-[Macondo] text-[1.2rem] xl:text-[1.6rem] 2xl:[text-2.0rem] underline text-nowrap'>
+                  {result.NAME}
+                </li>
+              </Link>
+            )
+          })}
+        </ul>
+      </div>
+      : 
+      <div className="loadingcont">
+          <img src={loadIcon} alt="Loading..." className="w-25" />
+      </div>
+      }
+    </section>
   )
 }
 

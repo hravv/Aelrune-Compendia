@@ -11,6 +11,8 @@ import Characters from './Characters';
 import Bestiary from './Bestiary';
 import Items from './Items';
 import WorldMap from './WorldMap';
+import NPCs from './NPCs';
+import Locations from './Locations';
 import InfoPage from './InfoPage';
 import SearchResults from './SearchResults';
 
@@ -18,7 +20,7 @@ const Content = ( { allData, searchInput, setSearchInput } ) => {
 
     return (
         <section>
-            <div className='w-[80%] sm:w-[60%] max-w-300 py-10 md:py-20 px-10 mx-auto mb-12 border-yellow-900 border-4 rounded-lg flex items-center justify-center' style={{ backgroundImage: `url(${paper})` }}>
+            <div className='w-[80%] sm:w-[60%] max-w-300 min-h-200 py-10 md:py-20 px-10 mx-auto mb-12 border-yellow-900 border-4 rounded-lg flex justify-center' style={{ backgroundImage: `url(${paper})` }}>
                 <Routes>
                     <Route path='/' element={<Home searchInput={searchInput} setSearchInput={setSearchInput} />} />
                     <Route path='/lore' element={<Lore />} />
@@ -26,6 +28,8 @@ const Content = ( { allData, searchInput, setSearchInput } ) => {
                     <Route path='/bestiary' element={<Bestiary creaturesData={allData.creatures} />}>Bestiary</Route>
                     <Route path='/items' element={<Items itemsData={allData.items} />}>Items</Route>
                     <Route path='/worldmap' element={<WorldMap />}>World Map</Route>
+                    <Route path='/locations' element={<Locations locationData={allData.locations} />}>Locations</Route>
+                    <Route path='/NPCs' element={<NPCs npcsData={allData.npcs} />}>NPCs</Route>
                     <Route path={'/:name'} element={<InfoPage allData={allData} />} />
                     <Route path='/search' element={<SearchResults allData={allData} />} />
                 </Routes>

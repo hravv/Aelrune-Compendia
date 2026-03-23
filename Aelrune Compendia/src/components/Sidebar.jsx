@@ -44,6 +44,16 @@ const Sidebar = () => {
           Items
         </div>
       </NavItem>
+      <NavItem to='/locations'>
+        <div className='navbutton2 w-45 h-10 2xl:w-60 2xl:h-13 rounded-sm z-8 2xl:text-[1.8rem] flex items-center justify-center'>
+          Locations
+        </div>
+      </NavItem>
+      <NavItem to='/NPCs'>
+        <div className='navbutton3 w-45 h-10 2xl:w-60 2xl:h-13 rounded-sm z-6 2xl:text-[1.8rem] flex items-center justify-center'>
+          NPCs
+        </div>
+      </NavItem>
       <NavItem to='/worldmap'>
         <div className='navbutton w-45 h-10 2xl:w-60 2xl:h-13 rounded-sm z-5 2xl:text-[1.8rem] flex items-center justify-center'>
           World Map

@@ -14,7 +14,8 @@ const Home = ({ searchInput, setSearchInput }) => {
           <p className='text-[1.7rem]! font-[Macondo]!'>Search the archives:</p>
           <SearchBar searchInput={searchInput} setSearchInput={setSearchInput} textcolor="black"/>
         </div>
-        <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>The Ael’risha’ri (or simply the Ael, as many call them) built an empire that spanned the continent of Verus and beyond, achieving a level of architectural and social perfection that has never been seen since. However, millenia ago, a mysterious tragedy struck - the civilisation fell, and little but myth and fractured memory endured.</p>
+        <p>What remains has been gathered here. These records are among the last surviving traces of Aelrune’s history, preserved so their legacy is not lost to the turning of ages.</p>
       </div>
   )
 }
