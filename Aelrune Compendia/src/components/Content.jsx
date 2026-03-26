@@ -20,7 +20,7 @@ const Content = ( { allData, searchInput, setSearchInput } ) => {
 
     return (
         <section>
-            <div className='w-[80%] sm:w-[60%] max-w-300 min-h-200 py-10 md:py-20 px-10 mx-auto mb-12 border-yellow-900 border-4 rounded-lg flex justify-center' style={{ backgroundImage: `url(${paper})` }}>
+            <div className='w-[80%] sm:w-[60%] max-w-300 min-h-200 py-10 md:py-20 px-2 sm:px-10 mx-auto mb-12 border-yellow-900 border-4 rounded-lg flex text-center justify-center' style={{ backgroundImage: `url(${paper})` }}>
                 <Routes>
                     <Route path='/' element={<Home searchInput={searchInput} setSearchInput={setSearchInput} />} />
                     <Route path='/lore' element={<Lore />} />

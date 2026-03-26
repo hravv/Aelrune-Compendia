@@ -58,10 +58,10 @@ const QuoteBar = ( {fetchSheet} ) => {
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.5 }}
-                    className='quote-cont flex'
+                    className='quote-cont text-center flex flex-col md:flex-row' 
                     >
-                    <p className='text-[1.1rem] md:text-[1.5rem]! text-amber-100 m-[0]!'>{`"${displayedQuote.QUOTE}"`}</p>
-                    <p className='text-[1.1rem] md:text-[1.5rem]! text-amber-100 m-[0]!'>{`- ${displayedQuote.NAME}`}</p>
+                    <p className='text-[0.9rem]! md:text-[1.5rem]! text-amber-100 m-[0]!'>{`"${displayedQuote.QUOTE}"`}</p>
+                    <p className='text-[0.9rem]! md:text-[1.5rem]! text-amber-100 m-[0]!'>{`- ${displayedQuote.NAME}`}</p>
                   </motion.div>
                )
               }

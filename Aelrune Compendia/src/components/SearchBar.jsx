@@ -19,11 +19,11 @@ const SearchBar = ({ searchInput, setSearchInput, textcolor }) => {
   return (
     <div>
         <form 
-          className='search-cont flex justify-between w-64'
+          className='search-cont flex flex-col sm:flex-row justify-between w-64'
           onSubmit={handleSearch}
         >
             <input type="text" 
-                   className='bg-white px-2 mr-2 border-3 border-black' 
+                   className='bg-white px-2 sm:mr-2 border-3 border-black mb-2 sm:mb-0' 
                    value={searchInput}
                    onChange={e => setSearchInput(e.target.value)}
             />

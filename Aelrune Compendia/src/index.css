@@ -9,3 +9,7 @@ body {
 @theme {
     --breakpoint-minsidebar: 950px;
 }
+
+@theme {
+    --breakpoint-fullsize: 1800px;
+}
